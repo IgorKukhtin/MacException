@@ -1,0 +1,35 @@
+object ExcReportForm: TExcReportForm
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Exception report'
+  ClientHeight = 602
+  ClientWidth = 987
+  Position = MainFormCenter
+  FormStyle = StayOnTop
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object mm: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 20.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 945.000000000000000000
+    Size.Height = 537.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 945.000000000000000000
+    Viewport.Height = 537.000000000000000000
+  end
+  object btnOK: TButton
+    ModalResult = 1
+    Position.X = 884.000000000000000000
+    Position.Y = 560.000000000000000000
+    TabOrder = 1
+    Text = 'Close'
+    OnClick = btnOKClick
+  end
+end

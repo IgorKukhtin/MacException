@@ -1,0 +1,103 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Test exception'
+  ClientHeight = 486
+  ClientWidth = 249
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object btnDivByZero: TButton
+    Position.X = 50.000000000000000000
+    Position.Y = 76.000000000000000000
+    Size.Width = 140.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'DivByZero'
+    OnClick = btnDivByZeroClick
+  end
+  object btnAccesWrite0: TButton
+    Position.X = 50.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 140.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'AccesViolation'
+    OnClick = btnAccesWrite0Click
+  end
+  object btnExzception: TButton
+    Position.X = 50.000000000000000000
+    Position.Y = 180.000000000000000000
+    Size.Width = 140.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'raise Exception'
+    OnClick = btnExzceptionClick
+  end
+  object btnTryExceptRaise: TButton
+    Position.X = 50.000000000000000000
+    Position.Y = 432.000000000000000000
+    Size.Width = 140.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'rasie Exception'
+    OnClick = btnTryExceptRaiseClick
+  end
+  object lblUnhandled: TLabel
+    AutoSize = True
+    Position.X = 52.000000000000000000
+    Position.Y = 44.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Unhandled exception'
+    TabOrder = 4
+  end
+  object lblHandled: TLabel
+    AutoSize = True
+    Position.X = 52.000000000000000000
+    Position.Y = 292.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Handled exception'
+    TabOrder = 5
+  end
+  object btnTryExceptDiv: TButton
+    Position.X = 50.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 140.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'DivByZero'
+    OnClick = btnTryExceptDivClick
+  end
+  object btnTryExceptAV: TButton
+    Position.X = 50.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 140.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'AccesViolation'
+    OnClick = btnTryExceptAVClick
+  end
+  object btnCheckRaiseList: TButton
+    Position.X = 52.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'raise List.Add()'
+    OnClick = btnCheckRaiseListClick
+  end
+end
